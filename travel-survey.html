@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Preferences Survey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form class="survey-form">
+      <h1>Travel Preferences Survey</h1>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label>Favorite Destinations:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="destinations" value="beach"> Beaches</label>
+        <label><input type="checkbox" name="destinations" value="mountains"> Mountains</label>
+        <label><input type="checkbox" name="destinations" value="cities"> Cities</label>
+        <label><input type="checkbox" name="destinations" value="historical"> Historical Sites</label>
+        <label><input type="checkbox" name="destinations" value="adventure"> Adventure Spots</label>
+      </div>
+
+      <label>Preferred Travel Season:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="season" value="spring" required> Spring</label>
+        <label><input type="radio" name="season" value="summer"> Summer</label>
+        <label><input type="radio" name="season" value="autumn"> Autumn</label>
+        <label><input type="radio" name="season" value="winter"> Winter</label>
+      </div>
+
+      <label for="budget">Budget Range:</label>
+      <select id="budget" name="budget" required>
+        <option value="">-- Select Budget --</option>
+        <option value="low">Less than $500</option>
+        <option value="medium">$50 - $1500</option>
+        <option value="high">Above $1500</option>
+      </select>
+
+      <label>Travel Preference:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="preference" value="solo" required> Solo</label>
+        <label><input type="radio" name="preference" value="group"> Group</label>
+      </div>
+
+      <label for="memories">Share Travel Memories:</label>
+      <textarea id="memories" name="memories" rows="5" placeholder="Write about a memorable travel experience..."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
